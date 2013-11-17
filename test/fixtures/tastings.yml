@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  distillery: MyString
+  name: MyString
+  vintage: 1
+  date: 2013-11-16 23:49:35
+  rating: 1.5
+  color: MyString
+  notes: MyString
+  comments: MyString
+
+two:
+  distillery: MyString
+  name: MyString
+  vintage: 1
+  date: 2013-11-16 23:49:35
+  rating: 1.5
+  color: MyString
+  notes: MyString
+  comments: MyString
