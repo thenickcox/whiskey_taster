@@ -16,7 +16,7 @@
   	<title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
 
   	<%= stylesheet_link_tag    "application" %>
-  	<%= javascript_include_tag "vendor/custom.modernizr" %>
+    <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
   </head>
 
@@ -37,12 +37,12 @@
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
-    <script type='x/handlebars'>
-    <div class='row'>
-      {{outlet}}
-    </div>
+    <script type='text/x-handlebars'>
+      <div class='row'>
+        {{outlet}}
+      </div>
+    </script>
+
   </script>
-  </script>
-    <%= javascript_include_tag "application" %>
   </body>
 </html>

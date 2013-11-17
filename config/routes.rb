@@ -1,5 +1,7 @@
 WhiskeyTaster::Application.routes.draw do
 
+
+  get '*path', to: 'home#index'
   root :to => 'home#index'
   devise_for :users, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout'}
 
@@ -9,5 +11,9 @@ WhiskeyTaster::Application.routes.draw do
       resources :tastings
     end
   end
+
+
+
+
 
 end
